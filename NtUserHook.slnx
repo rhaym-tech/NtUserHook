@@ -1,0 +1,22 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Production" />
+    <BuildType Name="Release" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Kernel Mode/Kernel Mode.vcxproj">
+    <BuildType Solution="Release|x64" Project="Debug" />
+    <Platform Solution="Release|x64" Project="x64" />
+    <Deploy />
+  </Project>
+  <Project Path="User Mode C++/User Mode.vcxproj" Id="15596846-617b-449c-adce-ba4c7ad5da9e">
+    <Platform Solution="Debug|x64" Project="x64" />
+    <Platform Solution="Production|x64" Project="Win32" />
+    <Platform Solution="Release|x64" Project="x64" />
+  </Project>
+  <Project Path="UserMode C/UserMode C.vcxproj" Id="7fc3452a-0603-4d43-ada8-a40a7a27b252">
+    <BuildType Solution="Production|*" Project="Release" />
+    <Platform Project="x64" />
+  </Project>
+</Solution>
